@@ -7,6 +7,7 @@ import { AboutPage } from "./pages/AboutPage";
 import { ContactPage } from "./pages/ContactPage";
 import { WhatWeDoPage } from "./pages/WhatWeDoPage";
 import { HowWeThinkPage } from "./pages/HowWeThinkPage";
+import { CapitalDiligencePage } from "./pages/CapitalDiligencePage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/what-we-do" element={<WhatWeDoPage />} />
         <Route path="/how-we-think" element={<HowWeThinkPage />} />
+        <Route path="/capital-diligence" element={<CapitalDiligencePage />} />
         <Route path="/essays" element={<EssaysPage />} />
         <Route path="/essays/:slug" element={<EssayPage />} />
         <Route path="/about" element={<AboutPage />} />
