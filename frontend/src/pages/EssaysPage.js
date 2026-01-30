@@ -14,7 +14,7 @@ export const EssaysPage = () => {
         const data = await getEssays();
         setEssays(data);
       } catch (err) {
-        setError('Unable to load essays');
+        setError('Unable to load notes');
         console.error(err);
       } finally {
         setLoading(false);
@@ -22,6 +22,12 @@ export const EssaysPage = () => {
     };
     fetchEssays();
   }, []);
+
+  // Extract fragment (first 2-3 sentences) from excerpt
+  const getFragment = (excerpt) => {
+    const sentences = excerpt.match(/[^.!?]+[.!?]+/g) || [excerpt];
+    return sentences.slice(0, 2).join('').trim();
+  };
 
   if (loading) {
     return (
@@ -43,26 +49,31 @@ export const EssaysPage = () => {
     <Layout>
       <div data-testid="essays-page">
         <header className="page-header">
-          <h1 className="page-title" data-testid="page-title">Essays</h1>
+          <h1 className="page-title" data-testid="page-title">Notes</h1>
           <p className="page-subtitle" data-testid="page-subtitle">
-            Occasional notes on capital allocation, judgment under uncertainty, 
-            and the practice of long-term investing.
+            Working observations on structure, capital, and judgment.
           </p>
         </header>
         
-        <ul className="essay-list" data-testid="essays-list">
+        <ul className="notes-list" data-testid="notes-list">
           {essays.map((essay) => (
-            <li key={essay.id} className="essay-item" data-testid={`essay-item-${essay.slug}`}>
-              <p className="essay-date">{essay.date}</p>
-              <h2 className="essay-title">
-                <Link to={`/essays/${essay.slug}`} data-testid={`essay-link-${essay.slug}`}>
+            <li key={essay.id} className="note-item" data-testid={`note-item-${essay.slug}`}>
+              <p className="note-date">{essay.date}</p>
+              <h2 className="note-title">
+                <Link to={`/essays/${essay.slug}`} data-testid={`note-link-${essay.slug}`}>
                   {essay.title}
                 </Link>
               </h2>
-              <p className="essay-excerpt">{essay.excerpt}</p>
+              <p className="note-fragment">{getFragment(essay.excerpt)}</p>
             </li>
           ))}
         </ul>
+
+        <footer className="notes-footer">
+          <p className="access-notice" data-testid="access-notice">
+            Full access to these notes is intentionally limited.
+          </p>
+        </footer>
       </div>
     </Layout>
   );
