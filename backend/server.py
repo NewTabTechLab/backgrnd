@@ -255,6 +255,33 @@ async def get_about():
         raise HTTPException(status_code=404, detail="About content not found")
     return about
 
+# Access Request Model
+class AccessRequest(BaseModel):
+    name: str
+    role: str
+    context: str
+    why: str
+
+class AccessRequestResponse(BaseModel):
+    id: str
+    received: bool
+
+# Access Requests
+@api_router.post("/access-requests", response_model=AccessRequestResponse)
+async def create_access_request(request: AccessRequest):
+    """Submit an access request"""
+    doc = {
+        "id": str(uuid.uuid4()),
+        "name": request.name,
+        "role": request.role,
+        "context": request.context,
+        "why": request.why,
+        "submitted_at": datetime.now(timezone.utc).isoformat(),
+        "status": "pending"
+    }
+    await db.access_requests.insert_one(doc)
+    return {"id": doc["id"], "received": True}
+
 # Include the router
 app.include_router(api_router)
 
