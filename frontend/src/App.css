@@ -66,11 +66,19 @@
   border-top: 1px solid rgba(136, 136, 136, 0.15);
 }
 
+.footer-title {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5rem;
+}
+
 .footer-text {
   font-family: var(--font-sans);
   font-size: 0.75rem;
   color: var(--color-text-meta);
-  letter-spacing: 0.04em;
 }
 
 /* Page header - generous spacing */
