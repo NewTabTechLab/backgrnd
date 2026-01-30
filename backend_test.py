@@ -274,6 +274,9 @@ def main():
     # About page
     tester.test_about_content()
     
+    # Access requests
+    tester.test_access_request_submission()
+    
     # Print final results
     print("\n" + "=" * 50)
     print(f"📊 Test Results: {tester.tests_passed}/{tester.tests_run} passed")
