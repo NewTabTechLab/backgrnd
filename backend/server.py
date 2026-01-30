@@ -6,7 +6,7 @@ import os
 import logging
 from pathlib import Path
 from pydantic import BaseModel, Field, ConfigDict
-from typing import List, Optional
+from typing import List
 import uuid
 from datetime import datetime, timezone
 
@@ -75,7 +75,7 @@ async def seed_initial_data():
                 "excerpt": "The distinction between confidence and conviction is often blurred. Confidence is a feeling; conviction is a position. One can be confident without being right, and one can hold conviction without certainty.",
                 "body": [
                     "The distinction between confidence and conviction is often blurred. Confidence is a feeling; conviction is a position. One can be confident without being right, and one can hold conviction without certainty. The difference lies in the foundation upon which each rests.",
-                    "Confidence tends to emerge from pattern recognition—having seen something work before, we expect it to work again. It is extrapolative by nature. Conviction, by contrast, is more deliberate. It requires not just observation but reasoning. It asks not "has this worked?" but "why would this work?"",
+                    'Confidence tends to emerge from pattern recognition—having seen something work before, we expect it to work again. It is extrapolative by nature. Conviction, by contrast, is more deliberate. It requires not just observation but reasoning. It asks not "has this worked?" but "why would this work?"',
                     "In capital allocation, the distinction matters considerably. Confidence alone can lead to overcommitment in familiar territories while missing entirely the new. Conviction, built on first principles, allows for positions that may appear contrarian but are in fact simply reasoned.",
                     "We find that conviction is best developed slowly. It is not the product of a single meeting or memorandum, but of sustained attention to a question. The most durable convictions we hold are those we have tested repeatedly—not through affirmation, but through active skepticism.",
                     "This is why we tend to move slowly. Speed and conviction are not natural partners. The pressure to deploy capital quickly often produces confidence masquerading as conviction. We prefer to wait.",
@@ -126,7 +126,7 @@ async def seed_initial_data():
                 "excerpt": "Complex systems tend to produce simple-sounding explanations and simple systems tend to produce complex-sounding ones. This asymmetry is worth noting.",
                 "body": [
                     "Complex systems tend to produce simple-sounding explanations and simple systems tend to produce complex-sounding ones. This asymmetry is worth noting.",
-                    "When a situation is genuinely complex—many interacting variables, feedback loops, emergent properties—participants often retreat to simple narratives. "The market fell because of inflation fears." This is not wrong, exactly, but it is radically incomplete. The simplicity of the explanation belies the complexity of the underlying system.",
+                    "When a situation is genuinely complex—many interacting variables, feedback loops, emergent properties—participants often retreat to simple narratives. The market fell because of inflation fears. This is not wrong, exactly, but it is radically incomplete. The simplicity of the explanation belies the complexity of the underlying system.",
                     "Conversely, when a situation is relatively simple—a company with one product, one customer, one risk—participants often produce elaborate analyses. The simplicity of the underlying system is obscured by the complexity of the explanation.",
                     "We try to match the complexity of our analysis to the complexity of the subject. This is harder than it sounds. The temptation to oversimplify the complex and overcomplicate the simple runs deep.",
                     "In practice, this means we are often uncertain where others are confident, and confident where others are uncertain. Complex situations warrant humility; simple situations warrant conviction. Most investors do the opposite.",
