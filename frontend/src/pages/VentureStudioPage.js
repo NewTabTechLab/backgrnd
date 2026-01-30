@@ -49,7 +49,7 @@ export const VentureStudioPage = () => {
           <div className="essay-section-body">
             <p>
               The studio operates under strict internal discipline. We do not seek 
-              deal flow. We do not review pitches. We do not respond to 
+              external opportunities. We do not review pitches. We do not respond to 
               introductions from founders seeking backing. The ventures we pursue 
               originate entirely from our own analytical work—from observations 
               that accumulate over time until they become too interesting to ignore.
