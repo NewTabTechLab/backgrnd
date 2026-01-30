@@ -1,8 +1,6 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const Layout = ({ children }) => {
-  const location = useLocation();
-  
   return (
     <div className="app" data-testid="app-layout">
       <header className="header">
@@ -20,11 +18,11 @@ export const Layout = ({ children }) => {
                 Essays
               </Link>
               <Link 
-                to="/about" 
+                to="/access" 
                 className="nav-link"
-                data-testid="nav-about"
+                data-testid="nav-access"
               >
-                About
+                Access
               </Link>
             </nav>
           </div>
@@ -39,8 +37,9 @@ export const Layout = ({ children }) => {
       
       <footer className="footer">
         <div className="container">
+          <p className="footer-title" data-testid="footer-title">BACKGRND</p>
           <p className="footer-text" data-testid="footer-text">
-            BACKGRND
+            BACKGRND operates in the background.
           </p>
         </div>
       </footer>
