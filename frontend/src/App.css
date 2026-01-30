@@ -5,17 +5,17 @@
   flex-direction: column;
 }
 
-/* Container */
+/* Container - strict 680px max width */
 .container {
   width: 100%;
   max-width: var(--content-max-width);
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
 }
 
-/* Header */
+/* Header - generous top spacing */
 .header {
-  padding: 3rem 0 2rem;
+  padding: 4rem 0 3rem;
 }
 
 .header-inner {
@@ -26,9 +26,9 @@
 
 .site-title {
   font-family: var(--font-sans);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-text-primary);
 }
@@ -37,16 +37,16 @@
   text-decoration: none;
 }
 
-/* Navigation */
+/* Navigation - text only */
 .nav {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .nav-link {
   font-family: var(--font-sans);
   font-size: 0.85rem;
-  color: var(--color-text-secondary);
+  color: var(--color-text-meta);
 }
 
 .nav-link:hover {
@@ -54,43 +54,44 @@
   text-decoration: underline;
 }
 
-/* Main content */
+/* Main content - slow reading rhythm */
 .main {
   flex: 1;
-  padding: 2rem 0 6rem;
+  padding: 3rem 0 8rem;
 }
 
-/* Footer */
+/* Footer - minimal */
 .footer {
-  padding: 3rem 0;
-  border-top: 1px solid rgba(136, 136, 136, 0.2);
+  padding: 4rem 0;
+  border-top: 1px solid rgba(136, 136, 136, 0.15);
 }
 
 .footer-text {
   font-family: var(--font-sans);
   font-size: 0.75rem;
   color: var(--color-text-meta);
+  letter-spacing: 0.04em;
 }
 
-/* Page header */
+/* Page header - generous spacing */
 .page-header {
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 .page-title {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.35;
 }
 
 .page-subtitle {
-  font-size: 1.125rem;
+  font-size: 1.05rem;
   color: var(--color-text-secondary);
-  line-height: 1.6;
-  max-width: 560px;
+  line-height: 1.7;
 }
 
-/* Essay list */
+/* Essay list - no visual containers, just text and space */
 .essay-list {
   list-style: none;
   padding: 0;
@@ -98,28 +99,25 @@
 }
 
 .essay-item {
-  margin-bottom: 3rem;
-  padding-bottom: 3rem;
-  border-bottom: 1px solid rgba(136, 136, 136, 0.15);
+  margin-bottom: 4rem;
 }
 
 .essay-item:last-child {
-  border-bottom: none;
   margin-bottom: 0;
-  padding-bottom: 0;
 }
 
 .essay-date {
   font-family: var(--font-sans);
   font-size: 0.8rem;
   color: var(--color-text-meta);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.875rem;
+  letter-spacing: 0.01em;
 }
 
 .essay-title {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 500;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.875rem;
   line-height: 1.4;
 }
 
@@ -134,53 +132,52 @@
 .essay-excerpt {
   color: var(--color-text-secondary);
   font-size: 1rem;
-  line-height: 1.65;
+  line-height: 1.75;
   margin-bottom: 0;
 }
 
-/* Essay page */
+/* Essay page - long-form reading */
 .essay-header {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .essay-meta {
   font-family: var(--font-sans);
   font-size: 0.8rem;
   color: var(--color-text-meta);
-  margin-bottom: 1.5rem;
-  display: flex;
-  gap: 1.5rem;
+  margin-bottom: 1.75rem;
 }
 
 .essay-body {
   font-size: 1.05rem;
-  line-height: 1.75;
+  line-height: 1.85;
 }
 
 .essay-body p {
-  margin-bottom: 1.75rem;
+  margin-bottom: 2rem;
 }
 
 .essay-body p:last-child {
   margin-bottom: 0;
 }
 
-/* Back link */
+/* Back link - text only */
 .back-link {
   font-family: var(--font-sans);
   font-size: 0.85rem;
   color: var(--color-text-meta);
   display: inline-block;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .back-link:hover {
   color: var(--color-text-primary);
+  text-decoration: underline;
 }
 
-/* About page */
+/* About page sections - generous vertical rhythm */
 .about-section {
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 .about-section:last-child {
@@ -190,38 +187,38 @@
 .about-section h2 {
   font-size: 1.125rem;
   font-weight: 500;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
 }
 
 .about-section p {
   color: var(--color-text-secondary);
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
-/* Home intro */
+/* Home intro - prominent but restrained */
 .intro {
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
 }
 
 .intro-text {
-  font-size: 1.25rem;
-  line-height: 1.65;
+  font-size: 1.2rem;
+  line-height: 1.7;
   color: var(--color-text-primary);
-  max-width: 600px;
 }
 
+/* Section label - minimal */
 .section-label {
   font-family: var(--font-sans);
   font-size: 0.7rem;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   color: var(--color-text-meta);
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
-/* Contact */
+/* Contact - text only */
 .contact-line {
   font-family: var(--font-sans);
   font-size: 0.9rem;
@@ -231,4 +228,18 @@
 
 .contact-line a {
   color: var(--color-text-primary);
+}
+
+/* View all link - text only CTA */
+.view-all {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--color-text-meta);
+  display: inline-block;
+  margin-top: 3rem;
+}
+
+.view-all:hover {
+  color: var(--color-text-primary);
+  text-decoration: underline;
 }
