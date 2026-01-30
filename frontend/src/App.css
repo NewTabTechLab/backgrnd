@@ -403,3 +403,70 @@
   line-height: 1.85;
   color: var(--color-text-secondary);
 }
+
+/* Essay article - long-form reading */
+.essay-article {
+  max-width: var(--content-max-width);
+}
+
+.essay-article-header {
+  margin-bottom: 5rem;
+}
+
+.essay-article-title {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--color-text-primary);
+  margin-bottom: 1.25rem;
+}
+
+.essay-article-subtitle {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+}
+
+/* Essay sections - generous spacing for slow reading */
+.essay-section {
+  margin-bottom: 5rem;
+}
+
+.essay-section:last-of-type {
+  margin-bottom: 0;
+}
+
+.essay-section-title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+.essay-section-body p {
+  font-size: 1.02rem;
+  line-height: 1.9;
+  color: var(--color-text-primary);
+  margin-bottom: 1.85rem;
+}
+
+.essay-section-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Essay footer / closing */
+.essay-article-footer {
+  margin-top: 6rem;
+  padding-top: 4rem;
+  border-top: 1px solid rgba(136, 136, 136, 0.15);
+}
+
+.essay-closing {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
