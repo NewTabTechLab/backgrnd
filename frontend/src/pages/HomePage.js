@@ -53,11 +53,12 @@ export const HomePage = () => {
         <section className="home-section">
           <h2 className="section-heading" data-testid="section-areas">Areas of Work</h2>
           <nav className="areas-list" data-testid="areas-list">
-            <Link to="/essays" className="area-link">Business Architecture Analysis</Link>
-            <Link to="/essays" className="area-link">Value Chain Mapping</Link>
-            <Link to="/essays" className="area-link">Competitive Position Assessment</Link>
-            <Link to="/essays" className="area-link">Capital Structure Review</Link>
-            <Link to="/essays" className="area-link">Pre-Transaction Due Diligence Support</Link>
+            <Link to="/what-we-do#business-design" className="area-link">Business Design & Architecture</Link>
+            <Link to="/what-we-do#value-chain" className="area-link">Value Chain Intelligence</Link>
+            <Link to="/what-we-do#diagnostics" className="area-link">Business Diagnostics</Link>
+            <Link to="/what-we-do#domain" className="area-link">Domain Architecture</Link>
+            <Link to="/what-we-do#capital" className="area-link">Capital Diligence</Link>
+            <Link to="/what-we-do#venture" className="area-link">Venture Studio</Link>
           </nav>
         </section>
 
