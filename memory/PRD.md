@@ -3,6 +3,13 @@
 ## Original Problem Statement
 Build a calm, editorial, essay-led website for a firm called BACKGRND. Not a marketing site or startup landing page. The website must feel like an internal memo, research note, or capital committee brief. Goal is clarity, restraint, and judgment — not persuasion or conversion.
 
+## Technical Constraints
+- Frontend: React.js (pure presentation layer)
+- Backend: Python FastAPI (owns all data and business logic)
+- Communication: REST APIs
+- Database: MongoDB
+- Frontend must not implement business logic - clean separation
+
 ## User Personas
 - **Institutional Investors**: Seeking thoughtful, long-form content about investment philosophy
 - **Research-oriented readers**: Interested in essays on capital allocation and judgment
@@ -19,30 +26,45 @@ Build a calm, editorial, essay-led website for a firm called BACKGRND. Not a mar
 
 ## What's Been Implemented
 **Date: January 2025**
-- ✅ Homepage with firm intro and recent essays
-- ✅ Essays listing page with all 5 essays
+
+### Backend (FastAPI)
+- ✅ GET /api/config - Site configuration
+- ✅ GET /api/essays - All published essays (list view)
+- ✅ GET /api/essays/recent - Recent essays with limit param
+- ✅ GET /api/essays/{slug} - Single essay with full body
+- ✅ GET /api/about - About page content
+- ✅ Auto-seed data on startup
+- ✅ MongoDB integration
+
+### Frontend (React)
+- ✅ Homepage with API-driven intro and recent essays
+- ✅ Essays listing page
 - ✅ Individual essay pages with full content
-- ✅ About page with firm philosophy and contact
-- ✅ Responsive navigation (BACKGRND, Essays, About)
-- ✅ Typography system using Google Fonts
-- ✅ Color scheme per specifications
-- ✅ 680px max-width content constraint
-- ✅ Simple, restrained hover effects
+- ✅ About page with structured sections
+- ✅ API client module (/api/client.js)
+- ✅ Loading and error states
+- ✅ Clean navigation
 
 ## Architecture
-- **Frontend**: React with React Router
-- **Styling**: Custom CSS (no Tailwind utilities, pure editorial design)
-- **Content**: Static essay data in /data/essays.js
-- **Components**: Layout (shared header/footer)
+```
+Frontend (React)          Backend (FastAPI)         Database (MongoDB)
+     |                          |                         |
+     |-- GET /api/config ------>|-- query site_config --->|
+     |<-- site config ----------|<-- config data ---------|
+     |                          |                         |
+     |-- GET /api/essays ------>|-- query essays -------->|
+     |<-- essay list -----------|<-- essays --------------|
+```
 
 ## Prioritized Backlog
 ### P0 (Critical) - DONE
-- All core pages implemented
+- All core pages and API endpoints implemented
+- Clean frontend/backend separation
 
 ### P1 (Important) - Future
 - RSS feed for essays
-- Email subscription for new essays
-- Search functionality
+- Admin panel for content management
+- Email subscription
 
 ### P2 (Nice to have)
 - Dark mode toggle
@@ -50,6 +72,6 @@ Build a calm, editorial, essay-led website for a firm called BACKGRND. Not a mar
 - Reading time estimates
 
 ## Next Tasks
-1. Add RSS feed endpoint for essay syndication
-2. Consider email subscription for essay updates
-3. Add print stylesheet for essay pages
+1. Add admin authentication for content management
+2. Add RSS feed endpoint for essay syndication
+3. Consider email subscription for essay updates
