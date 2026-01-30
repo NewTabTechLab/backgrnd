@@ -1,79 +1,94 @@
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Layout } from '../components/Layout';
-import { getRecentEssays, getSiteConfig } from '../api/client';
 
 export const HomePage = () => {
-  const [essays, setEssays] = useState([]);
-  const [config, setConfig] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const [essaysData, configData] = await Promise.all([
-          getRecentEssays(3),
-          getSiteConfig()
-        ]);
-        setEssays(essaysData);
-        setConfig(configData);
-      } catch (err) {
-        setError('Unable to load content');
-        console.error(err);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchData();
-  }, []);
-
-  if (loading) {
-    return (
-      <Layout>
-        <div data-testid="home-loading" className="loading">Loading...</div>
-      </Layout>
-    );
-  }
-
-  if (error) {
-    return (
-      <Layout>
-        <div data-testid="home-error" className="error">{error}</div>
-      </Layout>
-    );
-  }
-
   return (
     <Layout>
       <div data-testid="home-page">
-        <section className="intro">
-          <p className="intro-text" data-testid="intro-text">
-            {config?.home_intro}
+        {/* Hero */}
+        <section className="hero">
+          <h1 className="hero-text" data-testid="hero-text">
+            BACKGRND examines businesses<br />
+            where architecture, value chains,<br />
+            and capital meet.
+          </h1>
+          <p className="hero-subtext" data-testid="hero-subtext">
+            We operate in the background, analysing how businesses are designed, 
+            positioned, and constrained before decisions harden into outcomes.
           </p>
         </section>
-        
-        <section>
-          <p className="section-label">Recent Writing</p>
-          <ul className="essay-list" data-testid="essay-list">
-            {essays.map((essay) => (
-              <li key={essay.id} className="essay-item" data-testid={`essay-item-${essay.slug}`}>
-                <p className="essay-date">{essay.date}</p>
-                <h2 className="essay-title">
-                  <Link to={`/essays/${essay.slug}`} data-testid={`essay-link-${essay.slug}`}>
-                    {essay.title}
-                  </Link>
-                </h2>
-                <p className="essay-excerpt">{essay.excerpt}</p>
-              </li>
-            ))}
-          </ul>
-          
-          {essays.length > 0 && (
-            <Link to="/essays" className="view-all" data-testid="view-all-link">
-              View all essays
-            </Link>
-          )}
+
+        {/* What This Firm Does */}
+        <section className="home-section">
+          <h2 className="section-heading" data-testid="section-what-we-do">What This Firm Does</h2>
+          <div className="section-content">
+            <p>
+              BACKGRND conducts structured analysis of business architecture. We examine 
+              how companies are built—their cost structures, margin profiles, competitive 
+              positioning, and capital requirements—before strategic or investment decisions 
+              are made.
+            </p>
+            <p>
+              Our work sits upstream of transactions. We clarify the underlying mechanics 
+              of businesses so that those with capital at stake can reason from firmer ground.
+            </p>
+          </div>
+        </section>
+
+        {/* What This Firm Does Not Do */}
+        <section className="home-section">
+          <h2 className="section-heading" data-testid="section-what-we-dont-do">What This Firm Does Not Do</h2>
+          <div className="section-content">
+            <p>
+              We do not manage capital. We do not execute transactions. We do not provide 
+              legal, accounting, or regulatory advice. We do not market, pitch, or advocate 
+              for particular outcomes.
+            </p>
+            <p>
+              We do not produce research for public consumption. Our work is private, 
+              specific, and written for principals who have already decided to look closely.
+            </p>
+          </div>
+        </section>
+
+        {/* Areas of Work */}
+        <section className="home-section">
+          <h2 className="section-heading" data-testid="section-areas">Areas of Work</h2>
+          <nav className="areas-list" data-testid="areas-list">
+            <Link to="/essays" className="area-link">Business Architecture Analysis</Link>
+            <Link to="/essays" className="area-link">Value Chain Mapping</Link>
+            <Link to="/essays" className="area-link">Competitive Position Assessment</Link>
+            <Link to="/essays" className="area-link">Capital Structure Review</Link>
+            <Link to="/essays" className="area-link">Pre-Transaction Due Diligence Support</Link>
+          </nav>
+        </section>
+
+        {/* Who Engages BACKGRND */}
+        <section className="home-section">
+          <h2 className="section-heading" data-testid="section-who-engages">Who Engages BACKGRND</h2>
+          <div className="section-content">
+            <p>
+              Family offices with concentrated positions. Holding companies evaluating 
+              adjacencies. Institutional investors seeking independent assessment before 
+              committing capital. Founders examining their own structures with fresh eyes.
+            </p>
+            <p>
+              Engagements are infrequent and selective. We work with those who value 
+              precision over speed, and who prefer analysis that does not come with 
+              an embedded recommendation.
+            </p>
+          </div>
+        </section>
+
+        {/* Quiet Closing */}
+        <section className="home-section closing">
+          <p className="closing-text" data-testid="closing-text">
+            Most of our work is never seen. That is by design. We have no interest in 
+            visibility, only in being useful to those who have found us.
+          </p>
+          <Link to="/contact" className="request-link" data-testid="request-context-link">
+            Request Context
+          </Link>
         </section>
       </div>
     </Layout>
