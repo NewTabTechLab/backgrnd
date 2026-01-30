@@ -70,7 +70,7 @@ export const HomePage = () => {
           </ul>
           
           {essays.length > 0 && (
-            <Link to="/essays" className="nav-link" style={{ marginTop: '2rem', display: 'inline-block' }} data-testid="view-all-link">
+            <Link to="/essays" className="view-all" data-testid="view-all-link">
               View all essays
             </Link>
           )}
