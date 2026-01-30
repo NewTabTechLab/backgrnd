@@ -5,12 +5,14 @@ import { EssaysPage } from "./pages/EssaysPage";
 import { EssayPage } from "./pages/EssayPage";
 import { AboutPage } from "./pages/AboutPage";
 import { ContactPage } from "./pages/ContactPage";
+import { WhatWeDoPage } from "./pages/WhatWeDoPage";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/what-we-do" element={<WhatWeDoPage />} />
         <Route path="/essays" element={<EssaysPage />} />
         <Route path="/essays/:slug" element={<EssayPage />} />
         <Route path="/about" element={<AboutPage />} />

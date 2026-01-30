@@ -361,3 +361,45 @@
   font-size: 0.9rem;
   color: var(--color-text-primary);
 }
+
+/* Memo-style sections for What We Do page */
+.memo-section {
+  margin-bottom: 5rem;
+}
+
+.memo-section:last-child {
+  margin-bottom: 0;
+}
+
+.memo-heading {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin-bottom: 1.75rem;
+  line-height: 1.4;
+}
+
+.memo-content p {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.memo-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Closing memo */
+.closing-memo {
+  margin-top: 6rem;
+  padding-top: 4rem;
+  border-top: 1px solid rgba(136, 136, 136, 0.15);
+}
+
+.closing-memo-text {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--color-text-secondary);
+}
