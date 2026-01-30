@@ -1,34 +1,234 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* Main layout */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+/* Container */
+.container {
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+/* Header */
+.header {
+  padding: 3rem 0 2rem;
 }
 
-.App-link {
-    color: #61dafb;
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.site-title {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+}
+
+.site-title:hover {
+  text-decoration: none;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+}
+
+.nav-link:hover {
+  color: var(--color-text-primary);
+  text-decoration: underline;
+}
+
+/* Main content */
+.main {
+  flex: 1;
+  padding: 2rem 0 6rem;
+}
+
+/* Footer */
+.footer {
+  padding: 3rem 0;
+  border-top: 1px solid rgba(136, 136, 136, 0.2);
+}
+
+.footer-text {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--color-text-meta);
+}
+
+/* Page header */
+.page-header {
+  margin-bottom: 4rem;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.page-subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  max-width: 560px;
+}
+
+/* Essay list */
+.essay-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.essay-item {
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(136, 136, 136, 0.15);
+}
+
+.essay-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.essay-date {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--color-text-meta);
+  margin-bottom: 0.75rem;
+}
+
+.essay-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.essay-title a {
+  color: var(--color-text-primary);
+}
+
+.essay-title a:hover {
+  text-decoration: underline;
+}
+
+.essay-excerpt {
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+/* Essay page */
+.essay-header {
+  margin-bottom: 3rem;
+}
+
+.essay-meta {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--color-text-meta);
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.essay-body {
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.essay-body p {
+  margin-bottom: 1.75rem;
+}
+
+.essay-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Back link */
+.back-link {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--color-text-meta);
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+
+.back-link:hover {
+  color: var(--color-text-primary);
+}
+
+/* About page */
+.about-section {
+  margin-bottom: 4rem;
+}
+
+.about-section:last-child {
+  margin-bottom: 0;
+}
+
+.about-section h2 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.about-section p {
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Home intro */
+.intro {
+  margin-bottom: 5rem;
+}
+
+.intro-text {
+  font-size: 1.25rem;
+  line-height: 1.65;
+  color: var(--color-text-primary);
+  max-width: 600px;
+}
+
+.section-label {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-meta);
+  margin-bottom: 2rem;
+}
+
+/* Contact */
+.contact-line {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.contact-line a {
+  color: var(--color-text-primary);
 }
