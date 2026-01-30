@@ -174,6 +174,78 @@ class BackgrndAPITester:
         
         return success, data
 
+    def test_access_request_submission(self):
+        """Test POST /api/access-requests"""
+        url = f"{self.api_url}/access-requests"
+        headers = {'Content-Type': 'application/json'}
+        
+        test_data = {
+            "name": "Test User",
+            "role": "Principal",
+            "context": "Testing the access request functionality for automated testing purposes.",
+            "why": "To verify that the access request system is working correctly."
+        }
+
+        self.tests_run += 1
+        print(f"\n🔍 Testing Access Request Submission...")
+        print(f"   URL: {url}")
+        
+        try:
+            response = requests.post(url, json=test_data, headers=headers, timeout=10)
+            
+            success = response.status_code == 200
+            response_data = {}
+            
+            if success:
+                try:
+                    response_data = response.json()
+                    print(f"✅ Passed - Status: {response.status_code}")
+                    
+                    # Check expected fields in response
+                    expected_fields = ["id", "received"]
+                    for field in expected_fields:
+                        if field not in response_data:
+                            print(f"⚠️  Warning: Expected field '{field}' not found in response")
+                        else:
+                            print(f"   ✓ Field '{field}' present")
+                    
+                    # Check that received is True
+                    if response_data.get("received") is True:
+                        print("   ✓ Request marked as received")
+                    else:
+                        print("   ⚠️  Request not marked as received")
+                    
+                    self.tests_passed += 1
+                    self.test_results.append({
+                        "test": "Access Request Submission",
+                        "status": "PASS",
+                        "response_status": response.status_code,
+                        "data_sample": str(response_data)
+                    })
+                except Exception as json_err:
+                    print(f"⚠️  Response not JSON: {str(json_err)}")
+                    response_data = response.text
+            else:
+                print(f"❌ Failed - Expected 200, got {response.status_code}")
+                print(f"   Response: {response.text[:200]}")
+                self.test_results.append({
+                    "test": "Access Request Submission",
+                    "status": "FAIL",
+                    "response_status": response.status_code,
+                    "error": response.text[:200]
+                })
+
+            return success, response_data
+
+        except Exception as e:
+            print(f"❌ Failed - Error: {str(e)}")
+            self.test_results.append({
+                "test": "Access Request Submission",
+                "status": "ERROR",
+                "error": str(e)
+            })
+            return False, {}
+
 def main():
     print("🚀 Starting BACKGRND API Tests")
     print("=" * 50)
