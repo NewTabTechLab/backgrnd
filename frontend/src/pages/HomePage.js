@@ -8,9 +8,7 @@ export const HomePage = () => {
         {/* Hero */}
         <section className="hero">
           <h1 className="hero-text" data-testid="hero-text">
-            BACKGRND examines businesses<br />
-            where architecture, value chains,<br />
-            and capital meet.
+            BACKGRND examines businesses where architecture, value chains, and capital meet.
           </h1>
           <p className="hero-subtext" data-testid="hero-subtext">
             We operate in the background, analysing how businesses are designed, 
