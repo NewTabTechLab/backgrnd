@@ -1,12 +1,42 @@
+import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Layout } from '../components/Layout';
-import { getEssayById } from '../data/essays';
+import { getEssayBySlug } from '../api/client';
 
 export const EssayPage = () => {
-  const { id } = useParams();
-  const essay = getEssayById(id);
-  
-  if (!essay) {
+  const { slug } = useParams();
+  const [essay, setEssay] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchEssay = async () => {
+      try {
+        const data = await getEssayBySlug(slug);
+        setEssay(data);
+      } catch (err) {
+        if (err.response?.status === 404) {
+          setError('not_found');
+        } else {
+          setError('Unable to load essay');
+        }
+        console.error(err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchEssay();
+  }, [slug]);
+
+  if (loading) {
+    return (
+      <Layout>
+        <div data-testid="essay-loading" className="loading">Loading...</div>
+      </Layout>
+    );
+  }
+
+  if (error === 'not_found') {
     return (
       <Layout>
         <div data-testid="essay-not-found">
@@ -19,7 +49,15 @@ export const EssayPage = () => {
       </Layout>
     );
   }
-  
+
+  if (error) {
+    return (
+      <Layout>
+        <div data-testid="essay-error" className="error">{error}</div>
+      </Layout>
+    );
+  }
+
   return (
     <Layout>
       <article data-testid="essay-page">
