@@ -20,7 +20,16 @@ export const PrincipalsPage = () => {
         </section>
 
         <section className="principal" data-testid="principal-sajen">
-          <h2 className="principal-name">Sajen Sivaraman</h2>
+          <h2 className="principal-name">
+            Sajen Sivaraman
+            <a 
+              href="https://www.linkedin.com/in/sajen-sivaraman" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="principal-linkedin"
+              data-testid="linkedin-sajen"
+            >in</a>
+          </h2>
           <p className="principal-role">Principal</p>
           <div className="principal-description">
             <p>
@@ -39,7 +48,16 @@ export const PrincipalsPage = () => {
         </section>
 
         <section className="principal" data-testid="principal-kamaleshwar">
-          <h2 className="principal-name">Kamaleshwar R</h2>
+          <h2 className="principal-name">
+            Kamaleshwar R
+            <a 
+              href="https://www.linkedin.com/in/kamaleshwar-r" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="principal-linkedin"
+              data-testid="linkedin-kamaleshwar"
+            >in</a>
+          </h2>
           <p className="principal-role">Principal</p>
           <div className="principal-description">
             <p>

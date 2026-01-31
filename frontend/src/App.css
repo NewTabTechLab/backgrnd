@@ -603,6 +603,22 @@
   font-weight: 500;
   color: var(--color-text-primary);
   margin-bottom: 0.5rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.principal-linkedin {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--color-text-meta);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.principal-linkedin:hover {
+  text-decoration: underline;
 }
 
 .principal-role {
