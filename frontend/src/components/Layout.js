@@ -18,6 +18,20 @@ export const Layout = ({ children }) => {
                 Essays
               </Link>
               <Link 
+                to="/capital-diligence" 
+                className="nav-link"
+                data-testid="nav-capital-diligence"
+              >
+                Capital Diligence
+              </Link>
+              <Link 
+                to="/venture-studio" 
+                className="nav-link"
+                data-testid="nav-venture-studio"
+              >
+                Venture Studio
+              </Link>
+              <Link 
                 to="/principals" 
                 className="nav-link"
                 data-testid="nav-principals"
