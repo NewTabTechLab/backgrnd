@@ -68,6 +68,23 @@
   opacity: 0.85;
 }
 
+/* Theme toggle */
+.theme-toggle {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--color-text-meta);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 0.5rem;
+}
+
+.theme-toggle:hover {
+  color: var(--color-text-secondary);
+  text-decoration: underline;
+}
+
 /* Main content - slow reading rhythm */
 .main {
   flex: 1;
