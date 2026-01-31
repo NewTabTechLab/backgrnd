@@ -75,13 +75,6 @@ export const Layout = ({ children }) => {
               >
                 Access
               </Link>
-              <button 
-                onClick={toggleTheme} 
-                className="theme-toggle"
-                data-testid="theme-toggle"
-              >
-                {getToggleLabel()}
-              </button>
             </nav>
           </div>
         </div>
@@ -95,11 +88,22 @@ export const Layout = ({ children }) => {
       
       <footer className="footer">
         <div className="container">
-          <p className="footer-title" data-testid="footer-title">BACKGRND</p>
-          <p className="footer-text" data-testid="footer-text">
-            We operate quietly.<br />
-            Outcomes tend to speak later.
-          </p>
+          <div className="footer-content">
+            <div className="footer-left">
+              <p className="footer-title" data-testid="footer-title">BACKGRND</p>
+              <p className="footer-text" data-testid="footer-text">
+                We operate quietly.<br />
+                Outcomes tend to speak later.
+              </p>
+            </div>
+            <button 
+              onClick={toggleTheme} 
+              className="theme-toggle"
+              data-testid="theme-toggle"
+            >
+              Light / Dark
+            </button>
+          </div>
         </div>
       </footer>
     </div>
