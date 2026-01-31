@@ -7,7 +7,7 @@ export const HomePage = () => {
       <div data-testid="home-page">
         {/* Hero */}
         <section className="hero !rounded-[5px]">
-          <h1 className="hero-text !font-semibold !bg-[#FCFCFC]" data-testid="hero-text">
+          <h1 className="hero-text !font-semibold" data-testid="hero-text">
             BACKGRND examines businesses<br />
             where architecture, value chains,<br />
             and capital meet.
