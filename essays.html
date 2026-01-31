@@ -1,78 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Essays – BACKGRND</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
-</head>
-<body>
-  <div class="app">
-    <header class="header">
-      <div class="container">
-        <div class="header-inner">
-          <a href="index.html" class="site-title">BACKGRND</a>
-          <nav class="nav">
-            <a href="essays.html" class="nav-link nav-link-secondary">Essays</a>
-            <a href="capital-diligence.html" class="nav-link">Capital</a>
-            <a href="venture-studio.html" class="nav-link">Studio</a>
-            <a href="principals.html" class="nav-link">Principals</a>
-            <a href="access.html" class="nav-link">Access</a>
-          </nav>
-        </div>
-      </div>
-    </header>
-
-    <main class="main">
-      <div class="container">
-        <header class="page-header">
-          <h1 class="page-title">Essays</h1>
-        </header>
-
-        <ul class="essays-list">
-          <li class="essays-list-item">
-            <a href="essays/capital-is-a-stress-test.html" class="essays-list-link">Capital Is a Stress Test, Not a Solution</a>
-          </li>
-          <li class="essays-list-item">
-            <a href="essays/time-is-not-neutral.html" class="essays-list-link">Time Is Not Neutral</a>
-          </li>
-          <li class="essays-list-item">
-            <a href="essays/most-failures-are-structural.html" class="essays-list-link">Most Failures Are Structural</a>
-          </li>
-          <li class="essays-list-item">
-            <a href="essays/on-conviction.html" class="essays-list-link">On Conviction</a>
-          </li>
-          <li class="essays-list-item">
-            <a href="essays/information-asymmetry.html" class="essays-list-link">Notes on Information Asymmetry</a>
-          </li>
-          <li class="essays-list-item">
-            <a href="essays/time-arbitrage.html" class="essays-list-link">Time Arbitrage</a>
-          </li>
-          <li class="essays-list-item">
-            <a href="essays/on-simplicity.html" class="essays-list-link">On Simplicity</a>
-          </li>
-          <li class="essays-list-item">
-            <a href="essays/memo-process.html" class="essays-list-link">A Note on Process</a>
-          </li>
-        </ul>
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-left">
-            <p class="footer-title">BACKGRND</p>
-            <p class="footer-text">
-              We operate quietly.<br>
-              Outcomes tend to speak later.
-            </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Essays – BACKGRND</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="container">
+          <div class="header-inner">
+            <a href="index.html" class="site-title">BACKGRND</a>
+            <button
+              class="nav-toggle"
+              aria-expanded="false"
+              aria-controls="site-navigation"
+              aria-label="Toggle navigation"
+            >
+              <span class="visually-hidden">Menu</span>
+              <svg
+                class="hamburger"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <rect
+                  class="bar top"
+                  x="4"
+                  y="6"
+                  width="16"
+                  height="2"
+                  rx="1"
+                ></rect>
+                <rect
+                  class="bar middle"
+                  x="4"
+                  y="11"
+                  width="16"
+                  height="2"
+                  rx="1"
+                ></rect>
+                <rect
+                  class="bar bottom"
+                  x="4"
+                  y="16"
+                  width="16"
+                  height="2"
+                  rx="1"
+                ></rect>
+              </svg>
+            </button>
+            <nav id="site-navigation" class="nav" data-open="false">
+              <a href="essays.html" class="nav-link nav-link-secondary"
+                >Essays</a
+              >
+              <a href="capital-diligence.html" class="nav-link">Capital</a>
+              <a href="venture-studio.html" class="nav-link">Studio</a>
+              <a href="principals.html" class="nav-link">Principals</a>
+              <a href="access.html" class="nav-link">Access</a>
+            </nav>
           </div>
-          <button onclick="toggleTheme()" class="theme-toggle">Light / Dark</button>
         </div>
-      </div>
-    </footer>
-  </div>
-</body>
+      </header>
+
+      <main class="main">
+        <div class="container">
+          <header class="page-header">
+            <h1 class="page-title">Essays</h1>
+          </header>
+
+          <ul class="essays-list">
+            <li class="essays-list-item">
+              <a
+                href="essays/capital-is-a-stress-test.html"
+                class="essays-list-link"
+                >Capital Is a Stress Test, Not a Solution</a
+              >
+            </li>
+            <li class="essays-list-item">
+              <a href="essays/time-is-not-neutral.html" class="essays-list-link"
+                >Time Is Not Neutral</a
+              >
+            </li>
+            <li class="essays-list-item">
+              <a
+                href="essays/most-failures-are-structural.html"
+                class="essays-list-link"
+                >Most Failures Are Structural</a
+              >
+            </li>
+            <li class="essays-list-item">
+              <a href="essays/on-conviction.html" class="essays-list-link"
+                >On Conviction</a
+              >
+            </li>
+            <li class="essays-list-item">
+              <a
+                href="essays/information-asymmetry.html"
+                class="essays-list-link"
+                >Notes on Information Asymmetry</a
+              >
+            </li>
+            <li class="essays-list-item">
+              <a href="essays/time-arbitrage.html" class="essays-list-link"
+                >Time Arbitrage</a
+              >
+            </li>
+            <li class="essays-list-item">
+              <a href="essays/on-simplicity.html" class="essays-list-link"
+                >On Simplicity</a
+              >
+            </li>
+            <li class="essays-list-item">
+              <a href="essays/memo-process.html" class="essays-list-link"
+                >A Note on Process</a
+              >
+            </li>
+          </ul>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-left">
+              <p class="footer-title">BACKGRND</p>
+              <p class="footer-text">
+                We operate quietly.<br />
+                Outcomes tend to speak later.
+              </p>
+            </div>
+            <button onclick="toggleTheme()" class="theme-toggle">
+              Light / Dark
+            </button>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

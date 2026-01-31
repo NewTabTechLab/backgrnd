@@ -1,69 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A Note on Process – BACKGRND</title>
-  <link rel="stylesheet" href="../styles.css">
-  <script src="../script.js"></script>
-</head>
-<body>
-  <div class="app">
-    <header class="header">
-      <div class="container">
-        <div class="header-inner">
-          <a href="../index.html" class="site-title">BACKGRND</a>
-          <nav class="nav">
-            <a href="../essays.html" class="nav-link nav-link-secondary">Essays</a>
-            <a href="../capital-diligence.html" class="nav-link">Capital</a>
-            <a href="../venture-studio.html" class="nav-link">Studio</a>
-            <a href="../principals.html" class="nav-link">Principals</a>
-            <a href="../access.html" class="nav-link">Access</a>
-          </nav>
-        </div>
-      </div>
-    </header>
-
-    <main class="main">
-      <div class="container">
-        <article class="essay-article">
-          <a href="../essays.html" class="back-link">← Essays</a>
-
-          <header class="essay-article-header">
-            <h1 class="essay-article-title">A Note on Process</h1>
-          </header>
-
-          <div class="essay-article-body">
-            <p>We are often asked about our process. The question assumes that process is a stable thing—a set of steps to be followed. Our experience suggests otherwise.</p>
-
-            <p>What we have is less a process than a set of questions we return to repeatedly. Some are general: What do we know? What do we think we know but actually do not? What would change our mind? Some are specific to the situation at hand.</p>
-
-            <p>The value of these questions lies not in their novelty—they are ordinary questions—but in the discipline of returning to them. It is easy, in the flow of analysis, to lose sight of what one is actually trying to determine.</p>
-
-            <p>We keep extensive notes. Not summaries or conclusions, but the raw material of thought: observations, questions, contradictions, confusions. These notes are not for others; they are for ourselves, to be revisited when memory fades or circumstances change.</p>
-
-            <p>The discipline of writing is central to our process, such as it is. Writing forces precision that speaking does not. It exposes gaps in reasoning that conversation conceals. We distrust conclusions that cannot survive the discipline of being written down.</p>
-
-            <p>This memo is itself an example. The act of articulating our view on process has forced us to examine that view more closely than we otherwise would. We are not certain it will survive the examination.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Note on Process – BACKGRND</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="../script.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="container">
+          <div class="header-inner">
+            <a href="../index.html" class="site-title">BACKGRND</a>
+            <button
+              class="nav-toggle"
+              aria-expanded="false"
+              aria-controls="site-navigation"
+              aria-label="Toggle navigation"
+            >
+              <span class="visually-hidden">Menu</span>
+              <svg
+                class="hamburger"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <rect
+                  class="bar top"
+                  x="4"
+                  y="6"
+                  width="16"
+                  height="2"
+                  rx="1"
+                ></rect>
+                <rect
+                  class="bar middle"
+                  x="4"
+                  y="11"
+                  width="16"
+                  height="2"
+                  rx="1"
+                ></rect>
+                <rect
+                  class="bar bottom"
+                  x="4"
+                  y="16"
+                  width="16"
+                  height="2"
+                  rx="1"
+                ></rect>
+              </svg>
+            </button>
+            <nav id="site-navigation" class="nav" data-open="false">
+              <a href="../essays.html" class="nav-link nav-link-secondary"
+                >Essays</a
+              >
+              <a href="../capital-diligence.html" class="nav-link">Capital</a>
+              <a href="../venture-studio.html" class="nav-link">Studio</a>
+              <a href="../principals.html" class="nav-link">Principals</a>
+              <a href="../access.html" class="nav-link">Access</a>
+            </nav>
           </div>
-        </article>
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-left">
-            <p class="footer-title">BACKGRND</p>
-            <p class="footer-text">
-              We operate quietly.<br>
-              Outcomes tend to speak later.
-            </p>
-          </div>
-          <button onclick="toggleTheme()" class="theme-toggle">Light / Dark</button>
         </div>
-      </div>
-    </footer>
-  </div>
-</body>
+      </header>
+
+      <main class="main">
+        <div class="container">
+          <article class="essay-article">
+            <a href="../essays.html" class="back-link">← Essays</a>
+
+            <header class="essay-article-header">
+              <h1 class="essay-article-title">A Note on Process</h1>
+            </header>
+
+            <div class="essay-article-body">
+              <p>
+                We are often asked about our process. The question assumes that
+                process is a stable thing—a set of steps to be followed. Our
+                experience suggests otherwise.
+              </p>
+
+              <p>
+                What we have is less a process than a set of questions we return
+                to repeatedly. Some are general: What do we know? What do we
+                think we know but actually do not? What would change our mind?
+                Some are specific to the situation at hand.
+              </p>
+
+              <p>
+                The value of these questions lies not in their novelty—they are
+                ordinary questions—but in the discipline of returning to them.
+                It is easy, in the flow of analysis, to lose sight of what one
+                is actually trying to determine.
+              </p>
+
+              <p>
+                We keep extensive notes. Not summaries or conclusions, but the
+                raw material of thought: observations, questions,
+                contradictions, confusions. These notes are not for others; they
+                are for ourselves, to be revisited when memory fades or
+                circumstances change.
+              </p>
+
+              <p>
+                The discipline of writing is central to our process, such as it
+                is. Writing forces precision that speaking does not. It exposes
+                gaps in reasoning that conversation conceals. We distrust
+                conclusions that cannot survive the discipline of being written
+                down.
+              </p>
+
+              <p>
+                This memo is itself an example. The act of articulating our view
+                on process has forced us to examine that view more closely than
+                we otherwise would. We are not certain it will survive the
+                examination.
+              </p>
+            </div>
+          </article>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-left">
+              <p class="footer-title">BACKGRND</p>
+              <p class="footer-text">
+                We operate quietly.<br />
+                Outcomes tend to speak later.
+              </p>
+            </div>
+            <button onclick="toggleTheme()" class="theme-toggle">
+              Light / Dark
+            </button>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

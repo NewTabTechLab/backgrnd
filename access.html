@@ -1,91 +1,184 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Access – BACKGRND</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
-</head>
-<body>
-  <div class="app">
-    <header class="header">
-      <div class="container">
-        <div class="header-inner">
-          <a href="index.html" class="site-title">BACKGRND</a>
-          <nav class="nav">
-            <a href="essays.html" class="nav-link nav-link-secondary">Essays</a>
-            <a href="capital-diligence.html" class="nav-link">Capital</a>
-            <a href="venture-studio.html" class="nav-link">Studio</a>
-            <a href="principals.html" class="nav-link">Principals</a>
-            <a href="access.html" class="nav-link">Access</a>
-          </nav>
-        </div>
-      </div>
-    </header>
-
-    <main class="main">
-      <div class="container">
-        <header class="page-header">
-          <h1 class="page-title">Access</h1>
-        </header>
-
-        <section class="access-framing">
-          <p class="framing-text">BACKGRND engages selectively. We do not respond to general inquiries, partnership proposals, or requests for introductory conversations. The form below is not an invitation to contact—it is a filter.</p>
-          <p class="framing-text">We review submissions periodically. Most do not receive a response. This is not discourtesy; it is a reflection of how we allocate attention. If your context does not align with our current work, you will not hear from us.</p>
-        </section>
-
-        <section class="access-section">
-          <h2 class="access-section-title">Appropriate Contexts</h2>
-          <div class="access-section-body">
-            <p>Principals with capital at stake who require structural analysis before making a commitment. Family offices, holding companies, or independent investors evaluating a specific opportunity.</p>
-            <p>Founders or operators seeking an independent view of their own business architecture—not advice, but clarity.</p>
-            <p>Individuals who have been referred directly and were given reason to believe their inquiry would be appropriate.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Access – BACKGRND</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="container">
+          <div class="header-inner">
+            <a href="index.html" class="site-title">BACKGRND</a>
+            <button
+              class="nav-toggle"
+              aria-expanded="false"
+              aria-controls="site-navigation"
+              aria-label="Toggle navigation"
+            >
+              <span class="visually-hidden">Menu</span>
+              <svg
+                class="hamburger"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <rect
+                  class="bar top"
+                  x="4"
+                  y="6"
+                  width="16"
+                  height="2"
+                  rx="1"
+                ></rect>
+                <rect
+                  class="bar middle"
+                  x="4"
+                  y="11"
+                  width="16"
+                  height="2"
+                  rx="1"
+                ></rect>
+                <rect
+                  class="bar bottom"
+                  x="4"
+                  y="16"
+                  width="16"
+                  height="2"
+                  rx="1"
+                ></rect>
+              </svg>
+            </button>
+            <nav id="site-navigation" class="nav" data-open="false">
+              <a href="essays.html" class="nav-link nav-link-secondary"
+                >Essays</a
+              >
+              <a href="capital-diligence.html" class="nav-link">Capital</a>
+              <a href="venture-studio.html" class="nav-link">Studio</a>
+              <a href="principals.html" class="nav-link">Principals</a>
+              <a href="access.html" class="nav-link">Access</a>
+            </nav>
           </div>
-        </section>
+        </div>
+      </header>
 
-        <section class="access-form-section">
-          <form class="access-form" action="https://formspree.io/f/placeholder" method="POST">
-            <div class="form-field">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" id="name" name="name" class="form-input" required>
-            </div>
+      <main class="main">
+        <div class="container">
+          <header class="page-header">
+            <h1 class="page-title">Access</h1>
+          </header>
 
-            <div class="form-field">
-              <label for="role" class="form-label">Role / Capacity</label>
-              <input type="text" id="role" name="role" class="form-input" required>
-            </div>
-
-            <div class="form-field">
-              <label for="context" class="form-label">Context</label>
-              <textarea id="context" name="context" class="form-textarea" rows="4" required></textarea>
-            </div>
-
-            <div class="form-field">
-              <label for="why" class="form-label">Why BACKGRND</label>
-              <textarea id="why" name="why" class="form-textarea" rows="4" required></textarea>
-            </div>
-
-            <button type="submit" class="form-submit">Submit</button>
-          </form>
-        </section>
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-left">
-            <p class="footer-title">BACKGRND</p>
-            <p class="footer-text">
-              We operate quietly.<br>
-              Outcomes tend to speak later.
+          <section class="access-framing">
+            <p class="framing-text">
+              BACKGRND engages selectively. We do not respond to general
+              inquiries, partnership proposals, or requests for introductory
+              conversations. The form below is not an invitation to contact—it
+              is a filter.
             </p>
-          </div>
-          <button onclick="toggleTheme()" class="theme-toggle">Light / Dark</button>
+            <p class="framing-text">
+              We review submissions periodically. Most do not receive a
+              response. This is not discourtesy; it is a reflection of how we
+              allocate attention. If your context does not align with our
+              current work, you will not hear from us.
+            </p>
+          </section>
+
+          <section class="access-section">
+            <h2 class="access-section-title">Appropriate Contexts</h2>
+            <div class="access-section-body">
+              <p>
+                Principals with capital at stake who require structural analysis
+                before making a commitment. Family offices, holding companies,
+                or independent investors evaluating a specific opportunity.
+              </p>
+              <p>
+                Founders or operators seeking an independent view of their own
+                business architecture—not advice, but clarity.
+              </p>
+              <p>
+                Individuals who have been referred directly and were given
+                reason to believe their inquiry would be appropriate.
+              </p>
+            </div>
+          </section>
+
+          <section class="access-form-section">
+            <form
+              class="access-form"
+              action="https://formspree.io/f/placeholder"
+              method="POST"
+            >
+              <div class="form-field">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-input"
+                  required
+                />
+              </div>
+
+              <div class="form-field">
+                <label for="role" class="form-label">Role / Capacity</label>
+                <input
+                  type="text"
+                  id="role"
+                  name="role"
+                  class="form-input"
+                  required
+                />
+              </div>
+
+              <div class="form-field">
+                <label for="context" class="form-label">Context</label>
+                <textarea
+                  id="context"
+                  name="context"
+                  class="form-textarea"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-field">
+                <label for="why" class="form-label">Why BACKGRND</label>
+                <textarea
+                  id="why"
+                  name="why"
+                  class="form-textarea"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="form-submit">Submit</button>
+            </form>
+          </section>
         </div>
-      </div>
-    </footer>
-  </div>
-</body>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-left">
+              <p class="footer-title">BACKGRND</p>
+              <p class="footer-text">
+                We operate quietly.<br />
+                Outcomes tend to speak later.
+              </p>
+            </div>
+            <button onclick="toggleTheme()" class="theme-toggle">
+              Light / Dark
+            </button>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

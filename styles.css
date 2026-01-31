@@ -110,6 +110,7 @@ body {
 /* Hide mobile toggle on desktop by default */
 .nav-toggle {
   display: none;
+  color: var(--color-text-primary);
 }
 
 .nav-link {
@@ -730,6 +731,7 @@ a:hover {
   }
 
   .hamburger .bar {
+    fill: currentColor;
     transition:
       transform 200ms ease,
       opacity 150ms ease;
