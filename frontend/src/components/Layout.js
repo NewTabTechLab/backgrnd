@@ -1,6 +1,36 @@
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 export const Layout = ({ children }) => {
+  const [theme, setTheme] = useState(null);
+
+  useEffect(() => {
+    const saved = localStorage.getItem('theme');
+    if (saved) {
+      setTheme(saved);
+      document.documentElement.setAttribute('data-theme', saved);
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'dark' ? 'light' : theme === 'light' ? null : 'dark';
+    
+    if (newTheme) {
+      localStorage.setItem('theme', newTheme);
+      document.documentElement.setAttribute('data-theme', newTheme);
+    } else {
+      localStorage.removeItem('theme');
+      document.documentElement.removeAttribute('data-theme');
+    }
+    setTheme(newTheme);
+  };
+
+  const getToggleLabel = () => {
+    if (theme === 'dark') return 'Light';
+    if (theme === 'light') return 'Dark';
+    return 'Dark';
+  };
+
   return (
     <div className="app" data-testid="app-layout">
       <header className="header">
@@ -45,6 +75,13 @@ export const Layout = ({ children }) => {
               >
                 Access
               </Link>
+              <button 
+                onClick={toggleTheme} 
+                className="theme-toggle"
+                data-testid="theme-toggle"
+              >
+                {getToggleLabel()}
+              </button>
             </nav>
           </div>
         </div>
