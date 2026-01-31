@@ -3,6 +3,16 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  animation: pageSettle 500ms ease-out;
+}
+
+@keyframes pageSettle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Container - strict 680px max width */
