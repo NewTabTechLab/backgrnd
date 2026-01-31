@@ -340,7 +340,7 @@
 .closing {
   margin-top: 6rem;
   padding-top: 5rem;
-  border-top: 1px solid rgba(136, 136, 136, 0.15);
+  border-top: 1px solid var(--color-divider);
 }
 
 .closing-text {
@@ -417,7 +417,7 @@
 .closing-memo {
   margin-top: 6rem;
   padding-top: 4rem;
-  border-top: 1px solid rgba(136, 136, 136, 0.15);
+  border-top: 1px solid var(--color-divider);
 }
 
 .closing-memo-text {
@@ -483,7 +483,7 @@
 .essay-article-footer {
   margin-top: 6rem;
   padding-top: 4rem;
-  border-top: 1px solid rgba(136, 136, 136, 0.15);
+  border-top: 1px solid var(--color-divider);
 }
 
 .essay-closing {
@@ -565,7 +565,7 @@
 .essay-gating {
   margin-top: 4rem;
   padding-top: 3rem;
-  border-top: 1px solid rgba(136, 136, 136, 0.15);
+  border-top: 1px solid var(--color-divider);
 }
 
 .gating-message {
@@ -659,7 +659,7 @@
 .principals-closing {
   margin-top: 5rem;
   padding-top: 3rem;
-  border-top: 1px solid rgba(136, 136, 136, 0.15);
+  border-top: 1px solid var(--color-divider);
 }
 
 .principals-closing .closing-statement {
@@ -715,7 +715,7 @@
 .access-form-section {
   margin-top: 4rem;
   padding-top: 3rem;
-  border-top: 1px solid rgba(136, 136, 136, 0.15);
+  border-top: 1px solid var(--color-divider);
 }
 
 .access-form {
@@ -744,7 +744,7 @@
   color: var(--color-text-primary);
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid rgba(136, 136, 136, 0.3);
+  border-bottom: 1px solid var(--color-divider);
   padding: 0.625rem 0;
   outline: none;
   transition: border-color 0.15s ease;
