@@ -573,6 +573,68 @@
   text-decoration: underline;
 }
 
+/* Principals page */
+.principals-page {
+  max-width: var(--content-max-width);
+}
+
+.principals-opening {
+  margin-bottom: 5rem;
+}
+
+.principals-opening p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.principals-opening p:last-child {
+  margin-bottom: 0;
+}
+
+.principal {
+  margin-bottom: 5rem;
+}
+
+.principal-name {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.principal-role {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--color-text-meta);
+  margin-bottom: 2rem;
+}
+
+.principal-description p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.principal-description p:last-child {
+  margin-bottom: 0;
+}
+
+.principals-closing {
+  margin-top: 5rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(136, 136, 136, 0.15);
+}
+
+.principals-closing .closing-statement {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+}
+
 /* Access page */
 .access-page {
   max-width: var(--content-max-width);

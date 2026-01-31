@@ -10,6 +10,7 @@ import { HowWeThinkPage } from "./pages/HowWeThinkPage";
 import { CapitalDiligencePage } from "./pages/CapitalDiligencePage";
 import { VentureStudioPage } from "./pages/VentureStudioPage";
 import { AccessPage } from "./pages/AccessPage";
+import { PrincipalsPage } from "./pages/PrincipalsPage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/capital-diligence" element={<CapitalDiligencePage />} />
         <Route path="/venture-studio" element={<VentureStudioPage />} />
         <Route path="/access" element={<AccessPage />} />
+        <Route path="/principals" element={<PrincipalsPage />} />
         <Route path="/essays" element={<EssaysPage />} />
         <Route path="/essays/:slug" element={<EssayPage />} />
         <Route path="/about" element={<AboutPage />} />
