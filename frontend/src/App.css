@@ -613,16 +613,19 @@
 }
 
 .principal-linkedin {
-  font-family: var(--font-sans);
-  font-size: 0.7rem;
-  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
   color: var(--color-text-meta);
   text-decoration: none;
-  letter-spacing: 0.02em;
 }
 
 .principal-linkedin:hover {
-  text-decoration: underline;
+  color: var(--color-text-secondary);
+}
+
+.linkedin-icon {
+  width: 14px;
+  height: 14px;
 }
 
 .principal-role {
