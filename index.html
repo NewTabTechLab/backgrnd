@@ -1,119 +1,185 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BACKGRND</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
-</head>
-<body>
-  <div class="app">
-    <header class="header">
-      <div class="container">
-        <div class="header-inner">
-          <a href="index.html" class="site-title">BACKGRND</a>
-          <nav class="nav">
-            <a href="essays.html" class="nav-link nav-link-secondary">Essays</a>
-            <a href="capital-diligence.html" class="nav-link">Capital</a>
-            <a href="venture-studio.html" class="nav-link">Studio</a>
-            <a href="principals.html" class="nav-link">Principals</a>
-            <a href="access.html" class="nav-link">Access</a>
-          </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BACKGRND</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="container">
+          <div class="header-inner">
+            <a href="index.html" class="site-title">BACKGRND</a>
+            <button
+              class="nav-toggle"
+              aria-expanded="false"
+              aria-controls="site-navigation"
+              aria-label="Toggle navigation"
+            >
+              <span class="visually-hidden">Menu</span>
+              <svg
+                class="hamburger"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <rect
+                  class="bar top"
+                  x="4"
+                  y="6"
+                  width="16"
+                  height="2"
+                  rx="1"
+                ></rect>
+                <rect
+                  class="bar middle"
+                  x="4"
+                  y="11"
+                  width="16"
+                  height="2"
+                  rx="1"
+                ></rect>
+                <rect
+                  class="bar bottom"
+                  x="4"
+                  y="16"
+                  width="16"
+                  height="2"
+                  rx="1"
+                ></rect>
+              </svg>
+            </button>
+            <nav id="site-navigation" class="nav" data-open="false">
+              <a href="essays.html" class="nav-link nav-link-secondary"
+                >Essays</a
+              >
+              <a href="capital-diligence.html" class="nav-link">Capital</a>
+              <a href="venture-studio.html" class="nav-link">Studio</a>
+              <a href="principals.html" class="nav-link">Principals</a>
+              <a href="access.html" class="nav-link">Access</a>
+            </nav>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <main class="main">
-      <div class="container">
-        <section class="hero">
-          <h1 class="hero-text">
-            BACKGRND examines businesses<br>
-            where architecture, value chains,<br>
-            and capital meet.
-          </h1>
-          <p class="hero-subtext">
-            We operate in the background, analysing how businesses are designed, positioned, and constrained before decisions harden into outcomes.
-          </p>
-        </section>
-
-        <section class="home-section">
-          <h2 class="section-heading">What We Do</h2>
-          <div class="section-content">
-            <p>
-              BACKGRND is a business architecture and capital intelligence firm.<br>
-              Our work focuses on how businesses are structured<br>
-              how value accumulates across the value chain,<br>
-              how decisions compound over time,<br>
-              and how early architectural choices limit or expand future outcomes.<br>
-              We are typically engaged when clarity matters more than speed.
+      <main class="main">
+        <div class="container">
+          <section class="hero">
+            <h1 class="hero-text">
+              BACKGRND examines businesses<br />
+              where architecture, value chains,<br />
+              and capital meet.
+            </h1>
+            <p class="hero-subtext">
+              We operate in the background, analysing how businesses are
+              designed, positioned, and constrained before decisions harden into
+              outcomes.
             </p>
-          </div>
-        </section>
+          </section>
 
-        <section class="home-section">
-          <h2 class="section-heading">What We Don't Do</h2>
-          <div class="section-content">
-            <p>
-              We do not execute growth plans.<br>
-              We do not run marketing campaigns.<br>
-              We do not optimize operations.
-            </p>
-            <p>
-              BACKGRND exists upstream where mis-understood structure becomes irreversible cost later.
-            </p>
-          </div>
-        </section>
+          <section class="home-section">
+            <h2 class="section-heading">What We Do</h2>
+            <div class="section-content">
+              <p>
+                BACKGRND is a business architecture and capital intelligence
+                firm.<br />
+                Our work focuses on how businesses are structured<br />
+                how value accumulates across the value chain,<br />
+                how decisions compound over time,<br />
+                and how early architectural choices limit or expand future
+                outcomes.<br />
+                We are typically engaged when clarity matters more than speed.
+              </p>
+            </div>
+          </section>
 
-        <section class="home-section">
-          <h2 class="section-heading">Core Practice Areas</h2>
-          <nav class="areas-list">
-            <a href="what-we-do.html#business-design-architecture" class="area-link">Business Design & Architecture</a>
-            <a href="what-we-do.html#value-chain-intelligence" class="area-link">Value Chain Intelligence</a>
-            <a href="what-we-do.html#business-diagnostics" class="area-link">Business Diagnostics</a>
-            <a href="what-we-do.html#domain-architecture" class="area-link">Domain Architecture</a>
-          </nav>
-        </section>
+          <section class="home-section">
+            <h2 class="section-heading">What We Don't Do</h2>
+            <div class="section-content">
+              <p>
+                We do not execute growth plans.<br />
+                We do not run marketing campaigns.<br />
+                We do not optimize operations.
+              </p>
+              <p>
+                BACKGRND exists upstream where mis-understood structure becomes
+                irreversible cost later.
+              </p>
+            </div>
+          </section>
 
-        <section class="home-section">
-          <h2 class="section-heading">Who Engages BACKGRND</h2>
-          <div class="section-content">
-            <p>
-              Family offices with concentrated positions.<br>
-              Holding companies evaluating adjacencies.<br>
-              Institutional investors seeking independent assessment before committing capital.<br>
-              Founders examining their own structures under different constraints.
-            </p>
-            <p>
-              Engagements are infrequent and selective. We work with those who value precision over speed, and who prefer analysis that does not come with an embedded recommendation.
-            </p>
-          </div>
-        </section>
+          <section class="home-section">
+            <h2 class="section-heading">Core Practice Areas</h2>
+            <nav class="areas-list">
+              <a
+                href="what-we-do.html#business-design-architecture"
+                class="area-link"
+                >Business Design & Architecture</a
+              >
+              <a
+                href="what-we-do.html#value-chain-intelligence"
+                class="area-link"
+                >Value Chain Intelligence</a
+              >
+              <a href="what-we-do.html#business-diagnostics" class="area-link"
+                >Business Diagnostics</a
+              >
+              <a href="what-we-do.html#domain-architecture" class="area-link"
+                >Domain Architecture</a
+              >
+            </nav>
+          </section>
 
-        <section class="home-section closing">
-          <p class="closing-text">
-            Most of our work is never seen. That is by design.<br>
-            Visibility is not the objective. Usefulness is.
-          </p>
-          <a href="access.html" class="request-link">Request Context</a>
-        </section>
-      </div>
-    </main>
+          <section class="home-section">
+            <h2 class="section-heading">Who Engages BACKGRND</h2>
+            <div class="section-content">
+              <p>
+                Family offices with concentrated positions.<br />
+                Holding companies evaluating adjacencies.<br />
+                Institutional investors seeking independent assessment before
+                committing capital.<br />
+                Founders examining their own structures under different
+                constraints.
+              </p>
+              <p>
+                Engagements are infrequent and selective. We work with those who
+                value precision over speed, and who prefer analysis that does
+                not come with an embedded recommendation.
+              </p>
+            </div>
+          </section>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-left">
-            <p class="footer-title">BACKGRND</p>
-            <p class="footer-text">
-              We operate quietly.<br>
-              Outcomes tend to speak later.
+          <section class="home-section closing">
+            <p class="closing-text">
+              Most of our work is never seen. That is by design.<br />
+              Visibility is not the objective. Usefulness is.
             </p>
-          </div>
-          <button onclick="toggleTheme()" class="theme-toggle">Light / Dark</button>
+            <a href="access.html" class="request-link">Request Context</a>
+          </section>
         </div>
-      </div>
-    </footer>
-  </div>
-</body>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-left">
+              <p class="footer-title">BACKGRND</p>
+              <p class="footer-text">
+                We operate quietly.<br />
+                Outcomes tend to speak later.
+              </p>
+            </div>
+            <button onclick="toggleTheme()" class="theme-toggle">
+              Light / Dark
+            </button>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
