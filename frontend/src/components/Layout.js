@@ -12,7 +12,7 @@ export const Layout = ({ children }) => {
             <nav className="nav" data-testid="main-nav">
               <Link 
                 to="/essays" 
-                className="nav-link"
+                className="nav-link nav-link-secondary"
                 data-testid="nav-essays"
               >
                 Essays

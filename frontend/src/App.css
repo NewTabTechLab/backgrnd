@@ -54,6 +54,10 @@
   text-decoration: underline;
 }
 
+.nav-link-secondary {
+  opacity: 0.85;
+}
+
 /* Main content - slow reading rhythm */
 .main {
   flex: 1;
