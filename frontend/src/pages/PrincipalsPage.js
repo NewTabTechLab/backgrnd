@@ -23,7 +23,7 @@ export const PrincipalsPage = () => {
           <h2 className="principal-name">
             Sajen Sivaraman
             <a 
-              href="https://www.linkedin.com/in/sajen-sivaraman" 
+              href="https://linkedin.com/in/sajen-sivaraman-89741b33" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="principal-linkedin"
@@ -56,7 +56,7 @@ export const PrincipalsPage = () => {
           <h2 className="principal-name">
             Kamaleshwar R
             <a 
-              href="https://www.linkedin.com/in/kamaleshwar-r" 
+              href="https://linkedin.com/in/kamaleshwar-r-0034a011b" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="principal-linkedin"
