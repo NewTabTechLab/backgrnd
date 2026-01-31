@@ -49,7 +49,6 @@ export const EssaysPage = () => {
         <ul className="essays-list" data-testid="essays-list">
           {essays.map((essay) => (
             <li key={essay.id} className="essays-list-item" data-testid={`essay-item-${essay.slug}`}>
-              <span className="essays-list-date">{essay.date}</span>
               <Link to={`/essays/${essay.slug}`} className="essays-list-link" data-testid={`essay-link-${essay.slug}`}>
                 {essay.title}
               </Link>

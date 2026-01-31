@@ -68,7 +68,6 @@ export const EssayPage = () => {
         </Link>
         
         <header className="essay-article-header">
-          <p className="essay-article-date" data-testid="essay-date">{essay.date}</p>
           <h1 className="essay-article-title" data-testid="essay-title">{essay.title}</h1>
         </header>
         
