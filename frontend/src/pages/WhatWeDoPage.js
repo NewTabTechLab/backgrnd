@@ -37,7 +37,7 @@ export const WhatWeDoPage = () => {
         </section>
 
         {/* Business Design & Architecture */}
-        <section className="memo-section">
+        <section id="business-design-architecture" className="memo-section">
           <h2 className="memo-heading" data-testid="section-business-design">Business Design & Architecture</h2>
           <div className="memo-content">
             <p>
@@ -56,7 +56,7 @@ export const WhatWeDoPage = () => {
         </section>
 
         {/* Value Chain Intelligence */}
-        <section className="memo-section">
+        <section id="value-chain-intelligence" className="memo-section">
           <h2 className="memo-heading" data-testid="section-value-chain">Value Chain Intelligence</h2>
           <div className="memo-content">
             <p>
@@ -75,7 +75,7 @@ export const WhatWeDoPage = () => {
         </section>
 
         {/* Business Diagnostics */}
-        <section className="memo-section">
+        <section id="business-diagnostics" className="memo-section">
           <h2 className="memo-heading" data-testid="section-diagnostics">Business Diagnostics</h2>
           <div className="memo-content">
             <p>
@@ -95,7 +95,7 @@ export const WhatWeDoPage = () => {
         </section>
 
         {/* Domain Architecture */}
-        <section className="memo-section">
+        <section id="domain-architecture" className="memo-section">
           <h2 className="memo-heading" data-testid="section-domain">Domain Architecture</h2>
           <div className="memo-content">
             <p>
