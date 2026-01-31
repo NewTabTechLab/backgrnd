@@ -4,11 +4,11 @@ import { Layout } from '../components/Layout';
 export const HomePage = () => {
   return (
     <Layout>
-      <div data-testid="home-page" className="">
+      <div data-testid="home-page">
         {/* Hero */}
         <section className="hero !rounded-[5px]">
           <h1 className="hero-text !font-semibold !bg-[#FCFCFC]" data-testid="hero-text">
-            BACKGRND examines businesseswhere architecture, value chains,and capital meet.<br />
+            BACKGRND examines businesses<br />
             where architecture, value chains,<br />
             and capital meet.
           </h1>
@@ -17,34 +17,37 @@ export const HomePage = () => {
           </p>
         </section>
 
-        {/* What This Firm Does */}
+        {/* What We Do */}
         <section className="home-section">
           <h2 className="section-heading !font-semibold" data-testid="section-what-we-do">What We Do</h2>
           <div className="section-content">
-            <p className="!font-thin">BACKGRND is a business architecture and capital intelligence firm.
-Our work focuses on how businesses are structured
-how value accumulates across the value chain,
-how decisions compound over time,
-and how early architectural choices limit or expand future outcomes.
-We are typically engaged when clarity matters more than speed.</p>
-            <p>
-              Our work sits upstream of transactions. We clarify the underlying mechanics of businesses so that those with capital at stake can reason from firmer ground.
+            <p className="!font-thin">
+              BACKGRND is a business architecture and capital intelligence firm.<br />
+              Our work focuses on how businesses are structured<br />
+              how value accumulates across the value chain,<br />
+              how decisions compound over time,<br />
+              and how early architectural choices limit or expand future outcomes.<br />
+              We are typically engaged when clarity matters more than speed.
             </p>
           </div>
         </section>
 
-        {/* What This Firm Does Not Do */}
+        {/* What We Don't Do */}
         <section className="home-section">
           <h2 className="section-heading !font-semibold" data-testid="section-what-we-dont-do">What We Don't Do</h2>
           <div className="section-content">
-            <p>We do not execute growth plans.
-We do not run marketing campaigns.
-We do not optimize operations.</p>
-            <p>BACKGRND exists upstream where mis-understood structure becomes irreversible cost later.</p>
+            <p>
+              We do not execute growth plans.<br />
+              We do not run marketing campaigns.<br />
+              We do not optimize operations.
+            </p>
+            <p>
+              BACKGRND exists upstream where mis-understood structure becomes irreversible cost later.
+            </p>
           </div>
         </section>
 
-        {/* Areas of Work */}
+        {/* Core Practice Areas */}
         <section className="home-section">
           <h2 className="section-heading !font-semibold" data-testid="section-areas">Core Practice Areas</h2>
           <nav className="areas-list" data-testid="areas-list">
@@ -84,8 +87,8 @@ We do not optimize operations.</p>
           </Link>
         </section>
       </div>
-    </Layout>);
-
+    </Layout>
+  );
 };
 
 export default HomePage;

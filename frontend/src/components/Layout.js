@@ -10,18 +10,18 @@ export const Layout = ({ children }) => {
               BACKGRND
             </Link>
             <nav className="nav" data-testid="main-nav">
-              <Link
-                to="/essays"
+              <Link 
+                to="/essays" 
                 className="nav-link"
-                data-testid="nav-essays">
-
+                data-testid="nav-essays"
+              >
                 Essays
               </Link>
-              <Link
-                to="/access"
+              <Link 
+                to="/access" 
                 className="nav-link"
-                data-testid="nav-access">
-
+                data-testid="nav-access"
+              >
                 Access
               </Link>
             </nav>
@@ -38,13 +38,14 @@ export const Layout = ({ children }) => {
       <footer className="footer">
         <div className="container">
           <p className="footer-title" data-testid="footer-title">BACKGRND</p>
-          <p className="footer-text !text-[#000000]" data-testid="footer-text">We operate quietly.
-Outcomes tend to speak later.
+          <p className="footer-text !text-[#000000]" data-testid="footer-text">
+            We operate quietly.<br />
+            Outcomes tend to speak later.
           </p>
         </div>
       </footer>
-    </div>);
-
+    </div>
+  );
 };
 
 export default Layout;
