@@ -6,7 +6,7 @@ export const HomePage = () => {
     <Layout>
       <div data-testid="home-page" className="">
         {/* Hero */}
-        <section className="hero">
+        <section className="hero !rounded-[5px]">
           <h1 className="hero-text !font-semibold !bg-[#FCFCFC]" data-testid="hero-text">
             BACKGRND examines businesseswhere architecture, value chains,and capital meet.<br />
             where architecture, value chains,<br />
@@ -35,7 +35,7 @@ We are typically engaged when clarity matters more than speed.</p>
 
         {/* What This Firm Does Not Do */}
         <section className="home-section">
-          <h2 className="section-heading !font-semibold" data-testid="section-what-we-dont-do">What Backgrnd Does Not Do</h2>
+          <h2 className="section-heading !font-semibold" data-testid="section-what-we-dont-do">What We Don't Do</h2>
           <div className="section-content">
             <p>We do not execute growth plans.
 We do not run marketing campaigns.
