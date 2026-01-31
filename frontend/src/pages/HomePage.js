@@ -55,8 +55,6 @@ export const HomePage = () => {
             <Link to="/what-we-do" className="area-link">Value Chain Intelligence</Link>
             <Link to="/what-we-do" className="area-link">Business Diagnostics</Link>
             <Link to="/what-we-do" className="area-link">Domain Architecture</Link>
-            <Link to="/capital-diligence" className="area-link">Capital Diligence</Link>
-            <Link to="/venture-studio" className="area-link">Venture Studio</Link>
           </nav>
         </section>
 
