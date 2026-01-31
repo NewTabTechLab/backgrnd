@@ -57,6 +57,9 @@ export const EssayPage = () => {
     );
   }
 
+  const isGated = essay.gated === true;
+  const visibleParagraphs = isGated ? essay.body.slice(0, 2) : essay.body;
+
   return (
     <Layout>
       <article className="essay-article" data-testid="essay-page">
@@ -70,10 +73,21 @@ export const EssayPage = () => {
         </header>
         
         <div className="essay-article-body" data-testid="essay-body">
-          {essay.body.map((paragraph, index) => (
+          {visibleParagraphs.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
         </div>
+
+        {isGated && (
+          <div className="essay-gating" data-testid="essay-gating">
+            <p className="gating-message">
+              Full access to this essay is intentionally limited.
+            </p>
+            <Link to="/access" className="gating-link" data-testid="gating-access-link">
+              Request Access
+            </Link>
+          </div>
+        )}
       </article>
     </Layout>
   );

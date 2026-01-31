@@ -547,6 +547,32 @@
   margin-bottom: 0;
 }
 
+/* Essay gating */
+.essay-gating {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(136, 136, 136, 0.15);
+}
+
+.gating-message {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--color-text-primary);
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.gating-link {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--color-text-meta);
+}
+
+.gating-link:hover {
+  color: var(--color-text-primary);
+  text-decoration: underline;
+}
+
 /* Access page */
 .access-page {
   max-width: var(--content-max-width);
