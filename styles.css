@@ -679,7 +679,7 @@ a:hover {
     background: none;
     border: none;
     padding: 6px;
-    color: var(--color-text-meta);
+    color: var(--color-text-primary);
   }
 
   .nav {
