@@ -4,27 +4,29 @@ import { Layout } from '../components/Layout';
 export const HomePage = () => {
   return (
     <Layout>
-      <div data-testid="home-page">
+      <div data-testid="home-page" className="">
         {/* Hero */}
         <section className="hero">
-          <h1 className="hero-text" data-testid="hero-text">
-            BACKGRND examines businesses<br />
+          <h1 className="hero-text !font-semibold !bg-[#FCFCFC]" data-testid="hero-text">
+            BACKGRND examines businesseswhere architecture, value chains,and capital meet.<br />
             where architecture, value chains,<br />
             and capital meet.
           </h1>
-          <p className="hero-subtext" data-testid="hero-subtext">
+          <p className="hero-subtext !font-thin !text-left" data-testid="hero-subtext">
             We operate in the background, analysing how businesses are designed, positioned, and constrained before decisions harden into outcomes.
           </p>
         </section>
 
         {/* What This Firm Does */}
         <section className="home-section">
-          <h2 className="section-heading" data-testid="section-what-we-do">What This Firm Does</h2>
+          <h2 className="section-heading !font-semibold" data-testid="section-what-we-do">What We Do</h2>
           <div className="section-content">
-            <p>
-              BACKGRND conducts structured analysis of business architecture.
-              We examine how companies are built — how value is structured, how control is distributed, and how decisions compound — before strategic or investment decisions are made.
-            </p>
+            <p className="!font-thin">BACKGRND is a business architecture and capital intelligence firm.
+Our work focuses on how businesses are structured
+how value accumulates across the value chain,
+how decisions compound over time,
+and how early architectural choices limit or expand future outcomes.
+We are typically engaged when clarity matters more than speed.</p>
             <p>
               Our work sits upstream of transactions. We clarify the underlying mechanics of businesses so that those with capital at stake can reason from firmer ground.
             </p>
@@ -33,20 +35,18 @@ export const HomePage = () => {
 
         {/* What This Firm Does Not Do */}
         <section className="home-section">
-          <h2 className="section-heading" data-testid="section-what-we-dont-do">What This Firm Does Not Do</h2>
+          <h2 className="section-heading !font-semibold" data-testid="section-what-we-dont-do">What Backgrnd Does Not Do</h2>
           <div className="section-content">
-            <p>
-              We do not manage capital. We do not execute transactions. We do not provide legal, accounting, or regulatory advice. We do not market, pitch, or advocate for particular outcomes.
-            </p>
-            <p>
-              We do not produce research for public consumption. Our work is private, specific, and written for principals who have already decided to look closely.
-            </p>
+            <p>We do not execute growth plans.
+We do not run marketing campaigns.
+We do not optimize operations.</p>
+            <p>BACKGRND exists upstream where mis-understood structure becomes irreversible cost later.</p>
           </div>
         </section>
 
         {/* Areas of Work */}
         <section className="home-section">
-          <h2 className="section-heading" data-testid="section-areas">Areas of Work</h2>
+          <h2 className="section-heading !font-semibold" data-testid="section-areas">Core Practice Areas</h2>
           <nav className="areas-list" data-testid="areas-list">
             <Link to="/what-we-do" className="area-link">Business Design & Architecture</Link>
             <Link to="/what-we-do" className="area-link">Value Chain Intelligence</Link>
@@ -59,7 +59,7 @@ export const HomePage = () => {
 
         {/* Who Engages BACKGRND */}
         <section className="home-section">
-          <h2 className="section-heading" data-testid="section-who-engages">Who Engages BACKGRND</h2>
+          <h2 className="section-heading !font-semibold" data-testid="section-who-engages">Who Engages BACKGRND</h2>
           <div className="section-content">
             <p>
               Family offices with concentrated positions.<br />
@@ -84,8 +84,8 @@ export const HomePage = () => {
           </Link>
         </section>
       </div>
-    </Layout>
-  );
+    </Layout>);
+
 };
 
 export default HomePage;
