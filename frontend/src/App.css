@@ -479,97 +479,72 @@
   font-style: italic;
 }
 
-/* Notes list page */
-.notes-list {
+/* Essays list page */
+.essays-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.note-item {
-  margin-bottom: 3.5rem;
-}
-
-.note-item:last-child {
-  margin-bottom: 0;
-}
-
-.note-date {
-  font-family: var(--font-sans);
-  font-size: 0.8rem;
-  color: var(--color-text-meta);
-  margin-bottom: 0.75rem;
-  letter-spacing: 0.01em;
-}
-
-.note-title {
-  font-family: var(--font-serif);
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin-bottom: 0.75rem;
-  line-height: 1.4;
-}
-
-.note-title a {
-  color: var(--color-text-primary);
-}
-
-.note-title a:hover {
-  text-decoration: underline;
-}
-
-.note-fragment {
-  font-size: 0.95rem;
-  line-height: 1.7;
-  color: var(--color-text-secondary);
-  margin-bottom: 0;
-}
-
-/* Notes footer */
-.notes-footer {
-  margin-top: 5rem;
-  padding-top: 3rem;
-  border-top: 1px solid rgba(136, 136, 136, 0.15);
-}
-
-.access-notice {
-  font-family: var(--font-sans);
-  font-size: 0.85rem;
-  color: var(--color-text-meta);
-  font-style: italic;
-}
-
-/* Access limitation block on essay page */
-.access-limitation {
-  margin-top: 4rem;
-  padding-top: 3rem;
-  border-top: 1px solid rgba(136, 136, 136, 0.15);
-}
-
-.limitation-text {
-  font-family: var(--font-sans);
-  font-size: 0.9rem;
-  color: var(--color-text-primary);
-  margin-bottom: 1rem;
-  font-style: italic;
-}
-
-.limitation-subtext {
-  font-size: 0.9rem;
-  line-height: 1.7;
-  color: var(--color-text-secondary);
+.essays-list-item {
   margin-bottom: 2rem;
 }
 
-.request-access-link {
+.essays-list-date {
+  display: block;
   font-family: var(--font-sans);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--color-text-meta);
+  margin-bottom: 0.5rem;
 }
 
-.request-access-link:hover {
+.essays-list-link {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
   color: var(--color-text-primary);
+  line-height: 1.4;
+}
+
+.essays-list-link:hover {
   text-decoration: underline;
+}
+
+/* Essay article - long-form reading */
+.essay-article {
+  max-width: var(--content-max-width);
+}
+
+.essay-article-header {
+  margin-bottom: 4rem;
+}
+
+.essay-article-date {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--color-text-meta);
+  margin-bottom: 1.5rem;
+}
+
+.essay-article-title {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--color-text-primary);
+}
+
+.essay-article-body {
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+.essay-article-body p {
+  margin-bottom: 2rem;
+  color: var(--color-text-primary);
+}
+
+.essay-article-body p:last-child {
+  margin-bottom: 0;
 }
 
 /* Access page */
