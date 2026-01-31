@@ -96,7 +96,7 @@ export const Layout = ({ children }) => {
       <footer className="footer">
         <div className="container">
           <p className="footer-title" data-testid="footer-title">BACKGRND</p>
-          <p className="footer-text !text-[#000000]" data-testid="footer-text">
+          <p className="footer-text" data-testid="footer-text">
             We operate quietly.<br />
             Outcomes tend to speak later.
           </p>
