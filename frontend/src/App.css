@@ -71,18 +71,28 @@
 /* Theme toggle */
 .theme-toggle {
   font-family: var(--font-sans);
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: var(--color-text-meta);
   background: none;
   border: none;
   cursor: pointer;
   padding: 0;
-  margin-left: 0.5rem;
 }
 
 .theme-toggle:hover {
   color: var(--color-text-secondary);
   text-decoration: underline;
+}
+
+/* Footer content layout */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer-left {
+  flex: 1;
 }
 
 /* Main content - slow reading rhythm */
