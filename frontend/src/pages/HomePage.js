@@ -51,10 +51,10 @@ export const HomePage = () => {
         <section className="home-section">
           <h2 className="section-heading !font-semibold" data-testid="section-areas">Core Practice Areas</h2>
           <nav className="areas-list" data-testid="areas-list">
-            <Link to="/what-we-do" className="area-link">Business Design & Architecture</Link>
-            <Link to="/what-we-do" className="area-link">Value Chain Intelligence</Link>
-            <Link to="/what-we-do" className="area-link">Business Diagnostics</Link>
-            <Link to="/what-we-do" className="area-link">Domain Architecture</Link>
+            <Link to="/what-we-do#business-design-architecture" className="area-link">Business Design & Architecture</Link>
+            <Link to="/what-we-do#value-chain-intelligence" className="area-link">Value Chain Intelligence</Link>
+            <Link to="/what-we-do#business-diagnostics" className="area-link">Business Diagnostics</Link>
+            <Link to="/what-we-do#domain-architecture" className="area-link">Domain Architecture</Link>
           </nav>
         </section>
 
